@@ -1,0 +1,41 @@
+name: Windows build and tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - name: Restore
+        run: dotnet restore DiracToApo.csproj
+      - name: Build
+        run: dotnet build DiracToApo.csproj -c Release --no-restore
+      - name: Self-tests (no plugin or audio device)
+        shell: pwsh
+        run: |
+          & .\bin\Release\net10.0-windows\win-x64\DiracToApo.exe --self-test
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Publish portable executable
+        run: dotnet publish DiracToApo.csproj -c Release --no-restore -o dist
+      - name: Add documentation and checksum
+        shell: pwsh
+        run: |
+          Copy-Item README.md, VALIDATION.md dist
+          $hash = (Get-FileHash dist/DiracToApo.exe -Algorithm SHA256).Hash.ToLowerInvariant()
+          "$hash  DiracToApo.exe" | Set-Content dist/SHA256SUMS.txt -Encoding ascii
+      - uses: actions/upload-artifact@v4
+        with:
+          name: DiracToApo-win-x64
+          path: dist/
+          if-no-files-found: error

@@ -1,0 +1,38 @@
+# Builds and local tools
+bin/
+obj/
+.tools/
+.artifacts/
+artifacts/
+dist/
+.vs/
+.idea/
+TestResults/
+*.user
+*.suo
+
+# Proprietary plugins, user filters, captures and generated exports
+*.dll
+*.exe
+*.pdb
+*.bin
+*.wav
+*.f32
+*.zip
+*.jsonl
+jobs/
+pending.json
+request.json
+result.json
+worker-go.json
+progress.txt
+failure.txt
+worker-stdout.txt
+worker-stderr.txt
+
+# Local credentials and environment
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
