@@ -1,0 +1,25 @@
+WARNING — EXPERIMENTAL SOFTWARE
+================================
+This application has NEVER been tested on another computer or configuration.
+Real plugin tests were limited to its original development setup:
+Windows x64, Dirac Live Processor 1.8.2 VST2, stereo, 48 kHz.
+
+Compatibility, correct conversion and automatic recovery on your PC are NOT
+guaranteed. Back up your Dirac settings before trying it. Keep other Dirac
+applications and VST hosts closed during conversion. Use at your own risk.
+The full temporary-slot workflow has not yet been tested on a live user profile.
+This executable is unsigned. Do not disable Windows security protections.
+
+AVERTISSEMENT — LOGICIEL EXPERIMENTAL
+====================================
+Cette application n’a JAMAIS été testée sur un autre ordinateur ou une autre
+configuration. Les tests réels du plugin sont limités à la configuration
+de développement d’origine : Windows x64, Dirac Live Processor 1.8.2 VST2,
+stéréo, 48 kHz.
+
+La compatibilité, la conversion correcte et la restauration automatique sur
+votre PC ne sont PAS garanties. Sauvegardez vos réglages Dirac avant tout essai.
+Gardez les applications Dirac et les hôtes VST fermés pendant la conversion.
+Utilisation à vos risques. Le parcours complet avec emplacement temporaire
+n’a pas encore été testé sur un profil utilisateur réel.
+Cet exécutable n’est pas signé. Ne désactivez pas les protections Windows.

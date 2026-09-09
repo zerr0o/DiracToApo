@@ -1,5 +1,12 @@
 # Validation status / État de validation
 
+> [!CAUTION]
+> ## EXPERIMENTAL — NEVER TESTED ON ANOTHER COMPUTER OR CONFIGURATION
+> **This application has NEVER been tested on another computer or configuration.** Only the original development setup has been used for real plugin tests. Compatibility, correct conversion and automatic recovery on your PC are **not guaranteed**. Back up your Dirac settings before trying it. Use at your own risk.
+>
+> ## EXPÉRIMENTAL — JAMAIS TESTÉ SUR UN AUTRE ORDINATEUR OU UNE AUTRE CONFIGURATION
+> **Cette application n’a JAMAIS été testée sur un autre ordinateur ou une autre configuration.** Seule la configuration de développement d’origine a servi aux tests réels du plugin. La compatibilité, la conversion correcte et la restauration automatique sur votre PC ne sont **pas garanties**. Sauvegardez vos réglages Dirac avant tout essai. Utilisation à vos risques.
+
 ## English
 
 Evidence from local development on Windows x64:

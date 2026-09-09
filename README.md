@@ -1,9 +1,18 @@
 # Dirac → APO
 
+> [!CAUTION]
+> ## EXPERIMENTAL — NEVER TESTED ON ANOTHER COMPUTER OR CONFIGURATION
+> **This application has NEVER been tested on another computer or configuration.** Only the original development setup has been used for real plugin tests. Compatibility, correct conversion and automatic recovery on your PC are **not guaranteed**. Back up your Dirac settings before trying it. Use at your own risk.
+>
+> ## EXPÉRIMENTAL — JAMAIS TESTÉ SUR UN AUTRE ORDINATEUR OU UNE AUTRE CONFIGURATION
+> **Cette application n’a JAMAIS été testée sur un autre ordinateur ou une autre configuration.** Seule la configuration de développement d’origine a servi aux tests réels du plugin. La compatibilité, la conversion correcte et la restauration automatique sur votre PC ne sont **pas garanties**. Sauvegardez vos réglages Dirac avant tout essai. Utilisation à vos risques.
+
 **A small Windows app that turns a Dirac filter into a standalone Equalizer APO convolution filter.**  
 **Une petite application Windows qui transforme un filtre Dirac en convolution autonome pour Equalizer APO.**
 
 [English](#english) · [Français](#francais)
+
+**[Download the experimental Windows build / Télécharger la version Windows expérimentale](https://github.com/zerr0o/DiracToApo/releases/tag/v0.1.0-alpha.1)**
 
 > Experimental Windows x64 tool. An installed, activated **Dirac Live Processor VST2** is required **only for conversion**. No proprietary plugin, license, or personal filter is included in this repository.
 >

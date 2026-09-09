@@ -65,6 +65,15 @@ public sealed class MainForm : Form
         intro.Margin = new Padding(0, 0, 0, 18);
         AddRow(root, intro);
 
+        var experimental = BodyLabel("VERSION EXPÉRIMENTALE — JAMAIS TESTÉE SUR UN AUTRE PC OU UNE AUTRE CONFIGURATION.\nLa conversion et la restauration ne sont pas garanties sur votre PC. Sauvegardez vos réglages Dirac avant tout essai.");
+        experimental.BackColor = Color.FromArgb(255, 235, 231);
+        experimental.ForeColor = Color.FromArgb(145, 35, 30);
+        experimental.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+        experimental.Padding = new Padding(12);
+        experimental.Margin = new Padding(0, 0, 0, 14);
+        experimental.AccessibleName = "Avertissement : application expérimentale jamais testée sur un autre ordinateur ou une autre configuration";
+        AddRow(root, experimental);
+
         _inputs = Stack();
         _inputs.BackColor = Color.White;
         _inputs.Padding = new Padding(16, 12, 16, 12);

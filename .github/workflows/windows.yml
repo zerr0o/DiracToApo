@@ -31,7 +31,7 @@ jobs:
       - name: Add documentation and checksum
         shell: pwsh
         run: |
-          Copy-Item README.md, VALIDATION.md dist
+          Copy-Item README.md, VALIDATION.md, WARNING.txt dist
           $hash = (Get-FileHash dist/DiracToApo.exe -Algorithm SHA256).Hash.ToLowerInvariant()
           "$hash  DiracToApo.exe" | Set-Content dist/SHA256SUMS.txt -Encoding ascii
       - uses: actions/upload-artifact@v4
